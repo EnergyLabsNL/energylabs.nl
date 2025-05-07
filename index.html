@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergyLabs - Powering the Future of Energy</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ApexCharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+  <!-- Font Awesome -->
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <!-- Custom Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            base: '#f0e8dc',
+            primary: '#1f4c3a',
+            secondary: '#f0e8dc',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-base text-primary h-full">
+  <!-- Header -->
+  <header class="bg-base fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="#" class="flex items-center space-x-2 cursor-default">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+            <span class="text-secondary text-2xl font-bold">E</span>
+          </div>
+          <span class="text-primary text-xl font-bold">EnergyLabs</span>
+        </a>
+        <nav class="hidden md:flex space-x-8">
+          <a class="text-primary hover:text-primary/80 transition-colors cursor-pointer"
+            href="mailto:dirk@energylabs.nl">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-24 bg-base">
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-primary text-5xl font-bold mb-6">Powering the Future of Energy</h1>
+        <p class="text-primary/80 text-xl mb-12">Samen werken aan innovatieve oplossingen voor een duurzamere toekomst.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mx-auto px-6 py-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <i class="fa-solid fa-code text-primary text-3xl"></i>
+            <h3 class="text-primary text-xl font-bold">Software Engineering & Consulting</h3>
+          </div>
+          <p class="text-primary/70">Met 10+ jaar ervaring in SaaS, IoT, data op schaal en het bouwen van softwareteams,
+            zet ik technologie in als versneller van de energietransitie – en help ik jou om ideeën om te zetten in
+            werkende oplossingen.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <i class="fa-solid fa-layer-group text-primary text-3xl"></i>
+            <h3 class="text-primary text-xl font-bold">Prototyping</h3>
+          </div>
+          <p class="text-primary/70">Technische ideeën razendsnel omzetten in werkende prototypes, gericht op validatie
+            en met oog voor schaalbaarheid. Ideaal voor ondernemers die hun idee snel willen valideren.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <i class="fa-solid fa-leaf text-primary text-3xl"></i>
+            <h3 class="text-primary text-xl font-bold">Energy Transition Solutions</h3>
+          </div>
+          <p class="text-primary/70">De energietransitie vraagt om ondernemers met visie én daadkracht. Door slimme
+            oplossingen te ontwikkelen die écht gebruikt worden, versnellen we samen de stap naar een duurzamere
+            toekomst.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-6 py-20">
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-10">
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <div class="md:w-1/3">
+            <div class="rounded-2xl overflow-hidden mb-6">
+              <img class="w-full aspect-square object-cover" src="headshot2025.jpeg" alt="Dirk Groenen" />
+            </div>
+          </div>
+
+          <div class="md:w-2/3">
+            <h2 class="text-[#1f4c3a] text-3xl font-bold mb-4">Dirk Groenen</h2>
+            <p class="text-[#1f4c3a]/70 mb-6">Na tien jaar ervaring in softwareontwikkeling binnen startups en scale-ups
+              zet ik mijn kennis nu gericht in voor een duurzamere toekomst. Gedreven door een persoonlijke passie voor
+              elektrotechniek en verduurzaming, werk ik aan slimme producten en oplossingen – zowel op eigen initiatief
+              als samen met ondernemers die hun idee tot leven willen brengen.</p>
+            <p class="text-[#1f4c3a]/70 mb-8">Ben jij als ondernemer op zoek naar iemand die meedenkt én actief
+              meebouwt aan je idee? Neem gerust contact op.</p>
+
+            <div class="space-y-3 ">
+              <div class="flex items-center space-x-4">
+                <i class="fa-solid fa-envelope text-[#1f4c3a] text-xl w-6"></i>
+                <a class="text-[#1f4c3a] hover:text-[#1f4c3a]/80 transition-colors cursor-pointer"
+                  href="mailto:dirk@energylabs.nl">dirk@energylabs.nl</a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <i class="fa-brands fa-linkedin text-[#1f4c3a] text-xl w-6"></i>
+                <a class="text-[#1f4c3a] hover:text-[#1f4c3a]/80 transition-colors cursor-pointer" target="_blank"
+                  href="https://linkedin.com/in/dirkgroenen">linkedin.com/in/dirkgroenen</a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <i class="fa-solid fa-phone text-[#1f4c3a] text-xl w-6"></i>
+                <a class="text-[#1f4c3a]" href="tel:0651648328">06-51648328</a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <i class="fa-solid fa-location-dot text-[#1f4c3a] text-xl w-6"></i>
+                <span class="text-[#1f4c3a]">Nijmegen, Nederland</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-secondary">
+    <div class="container mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-4 md:mb-0 cursor-default">
+          <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
+            <span class="text-primary text-lg font-bold">E</span>
+          </div>
+          <span class="text-lg font-bold">EnergyLabs</span>
+        </div>
+        <div class="text-sm">EnergyLabs - Powering the Future of Energy</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
